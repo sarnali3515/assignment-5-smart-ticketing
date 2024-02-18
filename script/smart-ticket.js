@@ -9,6 +9,9 @@ let count = 0;
 
 const allSeat = document.getElementsByClassName('seat-btn');
 
+const applyBtn = document.getElementById('apply-btn');
+applyBtn.disabled = true;
+
 const nextButton = document.getElementById('next-btn');
 nextButton.disabled = true;
 
@@ -20,6 +23,9 @@ for (const seat of allSeat) {
         }
         else {
             count += 1;
+            if (count === 4) {
+                applyBtn.disabled = false;
+            }
             if (count > 0 && havePhoneNumber(phoneNumberInput.value)) {
                 nextButton.disabled = false;
             }
@@ -83,7 +89,6 @@ phoneNumberInput.addEventListener("input", function validatePhone() {
 });
 
 // coupon enabling
-const applyBtn = document.getElementById('apply-btn');
 const couponDiv = document.getElementById('coupon-div');
 applyBtn.addEventListener("click", function apply() {
     const totalPrices = totalPrice();
