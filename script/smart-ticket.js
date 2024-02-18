@@ -95,12 +95,16 @@ applyBtn.addEventListener("click", function apply() {
     if (couponCode === "NEW15") {
         grandTotal.innerText = totalPrices - totalPrices * 0.15;
         discountUl.classList.remove('hidden');
+        discountUl.classList.add('flex');
         discount.innerText = totalPrices * 0.15;
         applyBtn.removeEventListener("click", apply);
         couponDiv.classList.add('hidden');
     }
     else if (couponCode === "Couple 20") {
         grandTotal.innerText = totalPrices - totalPrices * 0.20;
+        discountUl.classList.remove('hidden');
+        discountUl.classList.add('flex');
+        discount.innerText = totalPrices * 0.20;
         applyBtn.removeEventListener("click", apply);
         couponDiv.classList.add('hidden');
     }
