@@ -9,6 +9,9 @@ let count = 0;
 
 const allSeat = document.getElementsByClassName('seat-btn');
 
+const nextButton = document.getElementById('next-btn');
+nextButton.disabled = true;
+
 for (const seat of allSeat) {
     seat.addEventListener("click", function seatSelect(event) {
         if (count >= 4) {
@@ -17,6 +20,9 @@ for (const seat of allSeat) {
         }
         else {
             count += 1;
+            if (count > 0 && havePhoneNumber(phoneNumberInput.value)) {
+                nextButton.disabled = false;
+            }
 
             const selectedSeat = seat.innerText;
             console.log(selectedSeat);
@@ -59,36 +65,44 @@ for (const seat of allSeat) {
 
             //total price
             totalPrice();
-
         }
     })
 }
 
-function totalPrice() {
-    const totalPrice = document.getElementById('total-price').innerText;
-    const total = parseInt(totalPrice) + 550;
-    document.getElementById("total-price").innerText = total;
-    return total;
-}
+//next button enabling
+nextButton.addEventListener("click", function next() {
+    console.log('Next button clicked');
+});
+const phoneNumberInput = document.getElementById('phone-number')
+phoneNumberInput.addEventListener("input", function validatePhone() {
+    if (count > 0 && havePhoneNumber(phoneNumberInput.value)) {
+        nextButton.disabled = false;
+    } else {
+        nextButton.disabled = true;
+    }
+});
 
-function grandTotal() {
-
-}
-
-// coupon
+// coupon enabling
 const applyBtn = document.getElementById('apply-btn');
+const couponDiv = document.getElementById('coupon-div');
 applyBtn.addEventListener("click", function apply() {
     const totalPrices = totalPrice();
     const grandTotal = document.getElementById('grand-total');
     const couponInput = document.getElementById('coupon-input').value;
-    const couponCode = couponInput.split(" ").join("");
+    const discount = document.getElementById('discount');
+    const discountUl = document.getElementById('discount-ul');
+    const couponCode = couponInput.split("").join("");
     if (couponCode === "NEW15") {
         grandTotal.innerText = totalPrices - totalPrices * 0.15;
+        discountUl.classList.remove('hidden');
+        discount.innerText = totalPrices * 0.15;
         applyBtn.removeEventListener("click", apply);
+        couponDiv.classList.add('hidden');
     }
-    else if (couponCode === "Couple20") {
+    else if (couponCode === "Couple 20") {
         grandTotal.innerText = totalPrices - totalPrices * 0.20;
         applyBtn.removeEventListener("click", apply);
+        couponDiv.classList.add('hidden');
     }
     else {
         alert("Invalid Coupon Code");
