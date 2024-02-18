@@ -7,6 +7,7 @@ function totalPrice() {
     const totalPrice = document.getElementById('total-price').innerText;
     const total = parseInt(totalPrice) + 550;
     document.getElementById("total-price").innerText = total;
+    document.getElementById("grand-total").innerText = total;
     return total;
 }
 
