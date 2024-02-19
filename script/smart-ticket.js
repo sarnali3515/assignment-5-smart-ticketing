@@ -95,8 +95,8 @@ applyBtn.addEventListener("click", function apply() {
     const couponInput = document.getElementById('coupon-input').value;
     const discount = document.getElementById('discount');
     const discountUl = document.getElementById('discount-ul');
-    const couponCode = couponInput.split("").join("").toLowerCase();
-    if (couponCode === "new15") {
+    const couponCode = couponInput.split("").join("");
+    if (couponCode === "NEW15") {
         grandTotal.innerText = totalPrices - totalPrices * 0.15;
         discountUl.classList.remove('hidden');
         discountUl.classList.add('flex');
@@ -104,7 +104,7 @@ applyBtn.addEventListener("click", function apply() {
         applyBtn.removeEventListener("click", apply);
         couponDiv.classList.add('hidden');
     }
-    else if (couponCode === "couple 20") {
+    else if (couponCode === "Couple 20") {
         grandTotal.innerText = totalPrices - totalPrices * 0.20;
         discountUl.classList.remove('hidden');
         discountUl.classList.add('flex');
