@@ -111,7 +111,7 @@
                             <img src="images/cupon-devider.png" alt="">
                         </div>
                         <div class="font-raleway py-14 px-12 space-y-2">
-                            <h2 class="text-3xl font-bold">Couple20</h2>
+                            <h2 class="text-3xl font-bold">Couple 20</h2>
                             <p class="text-xl ">Coupon Code</p>
                         </div>
                     </div>
@@ -381,7 +381,7 @@
                             <li> BDT <span id="total-price">0</span></li>
                         </ul>
                         <!-- coupon -->
-                        <div id="coupon-div" class="flex bg-white p-1 rounded-xl">
+                        <div id="coupon-div" class="flex justify-between bg-white p-1 rounded-xl">
                             <input id="coupon-input" class="pl-2" type="text" placeholder="Have any coupon?">
                             <button id="apply-btn" class="btn text-white bg-[#1DD100]">Apply</button>
                         </div>
@@ -395,15 +395,15 @@
                         </ul>
 
                     </div>
+                    <!-- form -->
                     <div class="mt-8">
-                        <p class="font-semibold mb-3">Passenger Name<sup>*</sup></p>
+                        <p class="font-semibold mb-3">Passenger Name*</p>
                         <input class="border-2 w-full rounded-xl p-3" type="text" placeholder="Enter your name">
-                        <p class="font-semibold my-3">Phone Number*</p>
-                        <input id="phone-number" class="border-2 w-full rounded-xl p-3" type="text"
+                        <p class="font-semibold my-3">Phone Number <span class="font-extrabold text-xl">*</span></p>
+                        <input id="phone-number" class="border-2 w-full rounded-xl p-3" type="number"
                             placeholder="Enter your phone number">
                         <p class="font-semibold my-3">Email ID</p>
-                        <input class="border-2 w-full rounded-xl p-3" type="text" placeholder="Enter your email ID">
-                        <!-- <button id="next-btn" class="btn bg-[#1DD100] text-white w-full mt-3 ">Next</button> -->
+                        <input class="border-2 w-full rounded-xl p-3" type="email" placeholder="Enter your email ID">
                         <button id="next-btn" class="btn bg-[#1DD100] text-white w-full mt-3"
                             onclick="my_modal_1.showModal()">Next</button>
                         <dialog id="my_modal_1" class="modal ">
