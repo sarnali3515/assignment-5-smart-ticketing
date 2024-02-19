@@ -66,7 +66,7 @@
             <div class="lg:px-52 lg:py-24">
                 <h1 class="font-extrabold text-[64px] text-white">End-to-End Travel with</h1>
                 <h1 class="font-extrabold text-[64px] text-[#1DD100]">Ease Tickets</h1>
-                <p class="text-white py-7 px-28">Explore Boundless Comfort with Ease Ticket—Effortless Booking,
+                <p class="text-white py-2 lg:py-7 px-28">Explore Boundless Comfort with Ease Ticket—Effortless Booking,
                     Unmatched Convenience.</p>
                 <button onclick="buyTickets()" class="btn bg-[#1DD100] border-none text-xl font-bold">Buy
                     Tickets</button>
@@ -89,29 +89,29 @@
                     <!-- coupon 1 -->
                     <div class="flex bg-[#FFBF0F] rounded-3xl">
                         <div class="font-inter p-2 lg:p-12 space-y-2">
-                            <h2 class="text-xl lg:text-4xl font-black">15% OFF</h2>
+                            <h2 class="text-2xl lg:text-4xl font-black">15% OFF</h2>
                             <p class="text-xl font-semibold">on your next purchase</p>
                             <p>use by February 2024</p>
                         </div>
                         <div>
                             <img src="images/cupon-devider.png" alt="">
                         </div>
-                        <div class="font-raleway py-14 px-12 space-y-2">
+                        <div class="font-raleway p-2 lg:py-14 px-12 space-y-2">
                             <h2 class="text-3xl font-bold">NEW15</h2>
                             <p class="text-xl ">Coupon Code</p>
                         </div>
                     </div>
                     <!-- coupon 2 -->
                     <div class="flex bg-[#F78C9C] rounded-3xl">
-                        <div class="font-inter p-12 space-y-2">
-                            <h2 class="text-4xl font-black">20% OFF</h2>
+                        <div class="font-inter p-2 lg:p-12 space-y-2">
+                            <h2 class="text-2xl lg:text-4xl font-black">20% OFF</h2>
                             <p class="text-xl font-semibold">on your next purchase</p>
                             <p>use by February 2024</p>
                         </div>
                         <div>
                             <img src="images/cupon-devider.png" alt="">
                         </div>
-                        <div class="font-raleway py-14 px-12 space-y-2">
+                        <div class="font-raleway p-2 lg:py-14 px-12 space-y-2">
                             <h2 class="text-3xl font-bold">Couple 20</h2>
                             <p class="text-xl ">Coupon Code</p>
                         </div>
@@ -124,24 +124,25 @@
         </section>
 
         <!-- PariBahan section -->
-        <section class="border-t-2 rounded-t-[88px] border-[#1DD100] py-16 bg-[#F7F8F8]">
+        <section id="seat-selection" class="border-t-2 rounded-t-[88px] border-[#1DD100] py-16 bg-[#F7F8F8]">
             <!-- title div -->
             <div class="text-center ">
                 <h2 class="font-raleway text-4xl font-bold pb-8">E.T Paribahan</h2>
-                <p class="px-72 pb-14">Secure your seat effortlessly with Ease Ticket – simplified booking for a
+                <p class=" px-4 lg:px-72 pb-14">Secure your seat effortlessly with Ease Ticket – simplified booking for
+                    a
                     stress-free travel experience. Unleash convenience at your fingertips, making ticket purchases swift
                     and hassle-free.</p>
             </div>
             <!-- ticket details -->
-            <div class="flex bg-white mx-32 rounded-xl">
+            <div class="flex bg-white mx-2 lg:mx-32 rounded-xl">
                 <!-- left -->
-                <div class="p-8 space-y-6">
+                <div class="p-2 lg:p-8 space-y-2 lg:space-y-6">
                     <!-- left head -->
-                    <div class="flex gap-52">
+                    <div class="flex gap-32 lg:gap-52">
                         <div class="flex gap-3">
                             <img src="images/bus-logo.png" alt="">
                             <div>
-                                <h3 class="font-raleway text-3xl font-bold">Greenline Paribahan</h3>
+                                <h3 class="font-raleway text-xl lg:text-3xl font-bold">Greenline Paribahan</h3>
                                 <p>Coach-009-WEB ! AC_Business</p>
                             </div>
                         </div>
@@ -151,7 +152,7 @@
                         </button>
                     </div>
                     <!-- left form -->
-                    <div class="bg-[#F7F8F8] p-8 rounded-xl">
+                    <div class="bg-[#F7F8F8] p-2 lg:p-8 rounded-xl">
                         <div class="flex justify-between font-semibold border-b-2 border-dashed pb-3">
                             <p class="text-[#03071299]">Departure Time</p>
                             <p>Dhaka - Sylhet</p>
@@ -163,7 +164,7 @@
                             <p>9:00 PM</p>
 
                         </div>
-                        <div class="mt-3 space-x-4">
+                        <div class="lg:mt-3 lg:space-x-4">
                             <button class="btn bg-[#0307120D] w-56">Boarding Point - Laxmipur</button>
                             <button class="btn bg-[#0307120D] w-56">Dropping Point - Bogura</button>
                             <button class="btn bg-[#0307120D] w-56">Est. Time - 11 Hour</button>
@@ -181,9 +182,9 @@
             </div>
 
             <!-- -----Ticket Seat Part------ -->
-            <div id="seat-selection" class="flex gap-7 bg-white mx-32 rounded-xl my-10 p-8">
+            <div class="flex flex-col lg:flex-row gap-7 bg-white lg:mx-32 rounded-xl my-10 p-8">
                 <!-- select seat -->
-                <div class="pr-7 border-r-2 border-dashed">
+                <div class="lg:pr-7 lg:border-r-2 border-dashed">
                     <h3 class="font-raleway font-semibold text-2xl mb-6">Select Your Seat</h3>
                     <div class="flex justify-between border-y-2 border-dashed py-3">
                         <div class="flex gap-2">
@@ -196,168 +197,168 @@
                         </div>
                     </div>
                     <div class="flex justify-end my-4 ">
-                        <button class="btn w-28 bg-[#0307121A]"><img src="images/wheel.png" alt=""></button>
+                        <button class="btn w-16 lg:w-28 bg-[#0307121A]"><img src="images/wheel.png" alt=""></button>
                     </div>
                     <!-- ABCD -->
                     <div class="space-y-6 text-[#03071280] font-inter">
                         <!-- A -->
-                        <div class="flex gap-16">
-                            <div class="flex gap-8 justify-center items-center">
+                        <div class="flex gap-6 lg:gap-16">
+                            <div class="flex gap-3 lg:gap-8 justify-center items-center">
                                 <p class="w-4">A</p>
                                 <button id="A1"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">A1</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">A1</button>
                                 <button id="A2"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">A2</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">A2</button>
                             </div>
-                            <div class="flex gap-8 ">
+                            <div class="flex gap-3 lg:gap-8 ">
                                 <button id="A3"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">A3</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">A3</button>
                                 <button id="A4"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">A4</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">A4</button>
                             </div>
                         </div>
                         <!-- B -->
-                        <div class="flex gap-16">
-                            <div class="flex gap-8 justify-center items-center">
+                        <div class="flex gap-6 lg:gap-16">
+                            <div class="flex gap-3 lg:gap-8 justify-center items-center">
                                 <p class="w-4">B</p>
                                 <button id="B1"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">B1</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">B1</button>
                                 <button id="B2"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">B2</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">B2</button>
                             </div>
-                            <div class="flex gap-8 ">
+                            <div class="flex gap-3 lg:gap-8 ">
                                 <button id="B3"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">B3</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">B3</button>
                                 <button id="B4"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">B4</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">B4</button>
                             </div>
                         </div>
                         <!-- C -->
-                        <div class="flex gap-16">
-                            <div class="flex gap-8 justify-center items-center">
+                        <div class="flex gap-6 lg:gap-16">
+                            <div class="flex gap-3 lg:gap-8 justify-center items-center">
                                 <p class="w-4">C</p>
                                 <button id="C1"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">C1</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">C1</button>
                                 <button id="C2"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">C2</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">C2</button>
                             </div>
-                            <div class="flex gap-8 ">
+                            <div class="flex gap-3 lg:gap-8 ">
                                 <button id="C3"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">C3</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">C3</button>
                                 <button id="C4"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">C4</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">C4</button>
                             </div>
                         </div>
                         <!-- D -->
-                        <div class="flex gap-16">
-                            <div class="flex gap-8 justify-center items-center">
+                        <div class="flex gap-6 lg:gap-16">
+                            <div class="flex gap-3 lg:gap-8 justify-center items-center">
                                 <p class="w-4">D</p>
                                 <button id="D1"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">D1</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">D1</button>
                                 <button id="D2"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">D2</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">D2</button>
                             </div>
-                            <div class="flex gap-8 ">
+                            <div class="flex gap-3 lg:gap-8 ">
                                 <button id="D3"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">D3</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">D3</button>
                                 <button id="D4"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">D4</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">D4</button>
                             </div>
                         </div>
                         <!-- E -->
-                        <div class="flex gap-16">
-                            <div class="flex gap-8 justify-center items-center">
+                        <div class="flex gap-6 lg:gap-16">
+                            <div class="flex gap-3 lg:gap-8 justify-center items-center">
                                 <p class="w-4">E</p>
                                 <button id="E1"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">E1</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">E1</button>
                                 <button id="E2"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">E2</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">E2</button>
                             </div>
-                            <div class="flex gap-8 ">
+                            <div class="flex gap-3 lg:gap-8 ">
                                 <button id="E3"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">E3</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">E3</button>
                                 <button id="E4"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">E4</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">E4</button>
                             </div>
                         </div>
                         <!-- F -->
-                        <div class="flex gap-16">
-                            <div class="flex gap-8 justify-center items-center">
+                        <div class="flex gap-6 lg:gap-16">
+                            <div class="flex gap-3 lg:gap-8 justify-center items-center">
                                 <p class="w-4">F</p>
                                 <button id="F1"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">F1</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">F1</button>
                                 <button id="F2"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">F2</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">F2</button>
                             </div>
-                            <div class="flex gap-8 ">
+                            <div class="flex gap-3 lg:gap-8 ">
                                 <button id="F3"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">F3</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">F3</button>
                                 <button id="F4"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">F4</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">F4</button>
                             </div>
                         </div>
                         <!-- G -->
-                        <div class="flex gap-16">
-                            <div class="flex gap-8 justify-center items-center">
+                        <div class="flex gap-6 lg:gap-16">
+                            <div class="flex gap-3 lg:gap-8 justify-center items-center">
                                 <p class="w-4">G</p>
                                 <button id="G1"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">G1</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">G1</button>
                                 <button id="G2"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">G2</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">G2</button>
                             </div>
-                            <div class="flex gap-8 ">
+                            <div class="flex gap-3 lg:gap-8 ">
                                 <button id="G3"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">G3</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">G3</button>
                                 <button id="G4"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">G4</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">G4</button>
                             </div>
                         </div>
                         <!-- H -->
-                        <div class="flex gap-16">
-                            <div class="flex gap-8 justify-center items-center">
+                        <div class="flex gap-6 lg:gap-16">
+                            <div class="flex gap-3 lg:gap-8 justify-center items-center">
                                 <p class="w-4">H</p>
                                 <button id="H1"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">H1</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">H1</button>
                                 <button id="H2"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">H2</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">H2</button>
                             </div>
-                            <div class="flex gap-8 ">
+                            <div class="flex gap-3 lg:gap-8 ">
                                 <button id="H3"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">H3</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">H3</button>
                                 <button id="H4"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">H4</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">H4</button>
                             </div>
                         </div>
                         <!-- I -->
-                        <div class="flex gap-16">
-                            <div class="flex gap-8 justify-center items-center">
+                        <div class="flex gap-6 lg:gap-16">
+                            <div class="flex gap-3 lg:gap-8 justify-center items-center">
                                 <p class="w-4">I</p>
                                 <button id="I1"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">I1</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">I1</button>
                                 <button id="I2"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">I2</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">I2</button>
                             </div>
-                            <div class="flex gap-8 ">
+                            <div class="flex gap-3 lg:gap-8 ">
                                 <button id="I3"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">I3</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">I3</button>
                                 <button id="I4"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">I4</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">I4</button>
                             </div>
                         </div>
                         <!-- J -->
-                        <div class="flex gap-16">
-                            <div class="flex gap-8 justify-center items-center">
+                        <div class="flex gap-6 lg:gap-16">
+                            <div class="flex gap-3 lg:gap-8 justify-center items-center">
                                 <p class="w-4">J</p>
                                 <button id="J1"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">J1</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">J1</button>
                                 <button id="J2"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">J2</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">J2</button>
                             </div>
-                            <div class="flex gap-8 ">
+                            <div class="flex gap-3 lg:gap-8 ">
                                 <button id="J3"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">J3</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">J3</button>
                                 <button id="J4"
-                                    class="btn seat-btn w-28 bg-[#F7F8F8] border-none text-[#03071280]">J4</button>
+                                    class="btn seat-btn w-16 lg:w-28 bg-[#F7F8F8] border-none text-[#03071280]">J4</button>
                             </div>
                         </div>
                     </div>
@@ -433,10 +434,10 @@
         </section>
     </main>
     <!-- footer -->
-    <footer class="bg-[#030712] text-white px-32 pt-28">
+    <footer class="bg-[#030712] text-white px-4 lg:px-32 pt-28">
         <div class="flex justify-between pb-12  border-b-2 border-dashed">
             <div class="space-y-3">
-                <h2 class="font-raleway text-4xl font-extrabold">Ease Ticket</h2>
+                <h2 class="font-raleway text-2xl lg:text-4xl font-extrabold">Ease Ticket</h2>
                 <p class="text-[#FFFFFFCC]">Step into a world of effortless travel with Ease Ticket -<br> where every
                     journey is crafted for your comfort and convenience.
                 </p>
